@@ -1,0 +1,526 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* ЗМІННІ*/
+:root {
+  --brand-color: #2196f3;
+  --main-text-color: #212121;
+  --second-text-color: #757575;
+  --footer-background-color: #2f303a;
+  --last-text-color: #ffffff;
+  --second-background-color: #f5f4fa;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --fill-main-color: #AFB1B8;
+}
+/*ОБМЕЖУЮЧИЙ КОНТЕЙНЕР*/
+.conteiner {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*ШАПКА САЙТУ*/
+header {
+  border-bottom: 1px solid #ececec;
+  height: 80px;
+}
+.mein {
+  display: flex;
+  align-items: center;
+
+}
+
+nav > ul {
+  display: flex;
+}
+.communication-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.logo {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  font-family: 'Raleway', sans-serif;
+}
+.logo-first-word {
+  color: var(--brand-color);
+  font-weight: 700;
+}
+.header-navigation {
+  margin-left: 93px;
+}
+
+.header-navigation li {
+  display: flex;
+  margin-right: 50px;
+}
+.header-navigation li:last-child {
+  margin-right: 0px;
+}
+.header-navigation a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--main-text-color);
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.communication-links-list {
+  display: flex;
+  align-items: center;
+}
+.communication-links-icon {
+  fill: var(--second-text-color);
+  margin-right: 10px;
+
+}
+.link-icon:hover .communication-links-icon,
+.link-icon:focus .communication-links-icon
+ {
+  fill: var(--brand-color);
+}
+
+.communication-links li:first-child {
+  margin-right: 50px;
+}
+
+.communication-links a {
+  display: flex;
+  align-items: center;
+
+  color: var(--second-text-color);
+  line-height: 1.17;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.header-navigation a:hover,
+.header-navigation a:focus,
+.communication-links a:hover,
+.communication-links a:focus {
+  color: var(--brand-color);
+}
+
+.nav-link-studia.current,
+.nav-link-portfolio.current {
+  color: var(--brand-color);
+}
+/* СЕКЦІЯ ГЕРОЙ */
+.tittle {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  background-color: var(--footer-background-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Img-tittle.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.tittle h1 {
+  color: var(--last-text-color);
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+  text-transform: uppercase;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tittle button {
+  padding: 10px 32px 10px 32px;
+  margin-top: 30px;
+
+  background-color: var(--brand-color);
+  color: white;
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.tittle button:hover {
+  background-color: #188ce8;
+}
+
+/* СЕКЦІЯ ОСОБЛИВОСТІ */
+.studio-section-advantage {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.studio-section-advantage li {
+  width: 270px;
+  margin-right: 30px;
+}
+/* ІКОНКИ */
+.studio-section-advantage-background-icon {
+  display: flex;
+  height: 120px;
+  background-color: var(--second-background-color);
+  margin-bottom: 30px;
+}
+.studio-section-advantage-icon {
+  margin: auto;
+}
+
+.studio-section-advantage li:last-child {
+  margin-right: 0;
+}
+.studio-section-advantage h3 {
+  line-height: 1.14;
+  font-weight: 700;
+}
+.studio-section-advantage p {
+  margin-top: 10px;
+
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+
+/* СЕКЦІЯ ЧИМ МИ ЗАЙМАЄМОСЯ */
+.studio-section-our-activity {
+  padding-bottom: 94px;
+  text-align: center;
+}
+.our-activity-photo {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.studio-section-our-activity h2 {
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700;
+}
+
+/* СЕКЦІЯ НАША КОМАНДА */
+.studio-section-our-team {
+  background-color: var(--second-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.studio-section-our-team h2 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700;
+  text-align: center;
+}
+.studio-list-our-team {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+.studio-list-our-team-item {
+  background-color: var(--last-text-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.studio-list-our-team h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+}
+.studio-list-our-team h3 {
+  margin-top: 30px;
+
+  font-size: 16px;
+  line-height: 1.18;
+  font-weight: 500;
+}
+.studio-list-our-team p {
+  margin-top: 10px;
+  margin-bottom: 16px;
+
+  line-height: 1.18;
+  font-weight: 400;
+  color: var(--second-text-color);
+}
+/* Лінки соц-мереж Наша команда*/
+.list-social-link {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--fill-main-color);
+  border-radius: 50%;
+
+}
+.social-link:hover,
+.social-link:focus {
+  fill: var(--last-text-color);
+  background-color: var(--brand-color);
+}
+.social-icon {
+  fill: currentColor;
+}
+/* Секція Постійні Клієнти */
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.regular-customers h2 {
+ text-align: center;
+  font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+}
+.section-regular-customers {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.section-regular-customers-list {
+  width: 170px;
+  min-height: 92px;
+  border: 1px solid var(--fill-main-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-regular-customers-item {
+  fill: var(--fill-main-color);
+}
+.section-regular-customers-list:hover .section-regular-customers-item,
+.section-regular-customers-list:focus .section-regular-customers-item {
+  fill:var(--brand-color);
+}
+.section-regular-customers-list:hover,
+.section-regular-customers-list:focus {
+  border: 1px solid var(--brand-color);
+}
+
+/*СЕКЦІЯ ФІЛЬТР КНОПОК ТА КОНТЕНТУ*/
+
+.sect-portfolio h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.filter-button-all.current {
+  background-color: var(--brand-color);
+  color: var(--last-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.portfolio-button-filter {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-button-filter li {
+  margin-right: 8px;
+}
+.portfolio-button-filter li:last-child {
+  margin-right: 0;
+}
+.portfolio-button-filter button {
+  background-color: var(--second-background-color);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  font-family: inherit;
+  border-style: none;
+  border-radius: 4px;
+  padding: 6px 25px 6px 25px;
+}
+.portfolio-button-filter button:hover,
+.portfolio-button-filter button:focus {
+  background-color: var(--brand-color);
+  color: var(--last-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.sect-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-box-text {
+  padding: 20px 24px 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.list-portfolio li {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  
+}
+.list-portfolio li:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.list-portfolio li:nth-child(3n) {
+  margin-right: 0;
+}
+.list-portfolio li:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.list-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.list-portfolio h2 {
+  margin-bottom: 4px;
+}
+.list-portfolio li p {
+
+  color: var(--second-text-color);
+  line-height: 1.87;
+}
+.list-portfolio h2 {
+  color: var(--main-text-color);
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/*ПІДВАЛ СТОРІНОК*/
+
+.footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  gap: 70px;
+}
+
+footer {
+  background-color: var(--footer-background-color);
+
+}
+
+.logo-footer-second-word {
+  color: var(--last-text-color);
+}
+
+.footer-communication-links a {
+  color: var(--footer-text-color);
+  display: block;
+  line-height: 1.7;
+  font-weight: 400;
+  font-style: normal;
+}
+
+address p {
+  margin-top: 20px;
+
+  color: var(--last-text-color);
+  font-style: normal;
+
+  line-height: 1.7;
+}
+.footer-communication-links li {
+  margin-bottom: 9px;
+  margin-top: 9px;
+}
+.footer-communication-links li:last-child {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.footer-communication-links a:hover,
+.footer-communication-links a:focus {
+  color: var(--brand-color);
+}
+.footer-second-block-link-social-list {
+  display: flex;
+  gap: 10px;
+}
+.footer-second-block-link-social h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: var(--last-text-color);
+}
+.footer-second-block-link-social-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+}
+.item-icon {
+   fill: var(--last-text-color);
+}
+.footer-second-block-link-social-list .twitter {
+  background-color: var(--brand-color);
+}
+.footer-second-block-link-social-list {
+  margin-top: 20px;
+}
+
